@@ -10,36 +10,42 @@
 </head>
 <body>
 <?php
-
-
-
 session_start();
 $nombre = $_SESSION["usuario"];
+if (isset($_SESSION["usuario"])) {
+  
+
 ?>
     <header>
-         
-            <h1 class="lenguaje">
+        <h1 class="lenguaje">
                 Friends Zone
-               
-            </h1> 
-            <h6 id="usuario">
+                <h6 id="usuario">
             <?php
             echo $nombre;
             ?>
             </h6>
+            </h1>    
     </header>
+      <!-- Sin resultado -->
+<div class="salir" >
+    <div class="nohayresultado">
+        <p class="cerrars">
+            ¿Quieres cerrar sesion?
+        </p>
+    </div>
+    <button  class="cancelar">Cancelar</button>
+    <button  class="aceptar">Aceptar</button>
+</div>
    <main>
      <?php
      $conectar=mysqli_connect("localhost","root","","mensaje");
         $res=mysqli_query($conectar,'SELECT mensaje,nombre FROM mensaje');
         while ($mensajes=mysqli_fetch_object($res)) {
         ?> 
-       
-            <h4>
-                <?php echo($mensajes->nombre); ?> 
-                Dice: <br>
+            <h4 >
+                    <?php echo($mensajes->nombre); ?> Dice: <br>
                 <?php echo($mensajes->mensaje); ?> 
-            </h4>
+        </h4>
           <br>
           <br>
     <?php
@@ -51,7 +57,6 @@ $nombre = $_SESSION["usuario"];
     <br>
     <br>
     <br>
-    
    </main>
    <br>
     <br>
@@ -67,35 +72,13 @@ $nombre = $_SESSION["usuario"];
              <input type="text" id="mensaje" name="mensaje" placeholder="Escribe aqui tu mensaje" autocomplete="off"> 
              <input type="submit" name="enviar" id="enviar" value="Enviar">
         </form>
-       
     </footer>
-
-    <script>
-
-var enviar=document.querySelector("#enviar");
-var Actualizar=document.querySelector("#actualizar");
-
-enviar.addEventListener("click",(e)=>{
-    
-    var usuario=document.querySelector("#usuario");
-    var nombre=document.querySelector("#nombre");
-
-    var mensaje=document.querySelector("#mensaje");
-    if (mensaje.value.length<=0) {
-        e.preventDefault();
-        alert("No puedes dejar el mensaje en blanco")
+    <script src="friendzone.js"></script>
+    <?php
     }
-    else if(mensaje.value.length>=9000){
-        e.preventDefault();
-        alert("No puedes Escribir mas de 9.000 caracteres en el mensaje")
+    else {
+        header("Location: index.html");
     }
-    else{
-        nombre.value=usuario.innerHTML
-    }
-});
-Actualizar.addEventListener("click",(e)=>{
-    location.reload("")
-});
-</script>
+?>
 </body>
 </html>
