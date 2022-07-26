@@ -16,13 +16,23 @@ h1{
 .div1{
     width: 9rem;
     height: 10rem;
-    background: grey;
+   /* background: grey;*/
     margin: 2rem;
-    cursor: pointer;
     
+    /*display: flex;*/
+    justify-content: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin: 0px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+img:hover{
+    width: 105px;
+    height: 105px;
+   
 }

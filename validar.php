@@ -1,4 +1,14 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pgeb.css">
+    <title>Zona de espera</title>
+</head>
+<body>
+    <?php
 
 session_start();
 
@@ -14,15 +24,11 @@ if (!empty($usuario) && !empty($contrasena) ) {
             header("Location: frienzone.php");
     }
     else{
-        echo("<center><h1>usuario incorrecto </h1> </center>"); 
-        echo("<center><a href='login.php'>volver al ingreso</a></center>");
+        echo("<center><h1>Usuario incorrecto </h1> </center>"); 
+        echo("<center><a href='login.php'>Volver al ingreso</a></center>");
     }
 };
 
-
-
-
-
-
-
 ?>
+</body>
+</html>
