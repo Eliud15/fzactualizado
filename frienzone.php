@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,8 @@
 </head>
 <body>
 <?php
+
+
 
 session_start();
 $nombre = $_SESSION["usuario"];
@@ -34,7 +36,6 @@ $nombre = $_SESSION["usuario"];
         ?> 
        
             <h4>
-                
                 <?php echo($mensajes->nombre); ?> 
                 Dice: <br>
                 <?php echo($mensajes->mensaje); ?> 
