@@ -8,21 +8,16 @@
     <title>Inicio</title>
 </head>
 <body>
-    <h1>Bienvenido a  Friends zone</h1>  
+    <header>
+        <img class="icon" src="logofz.png" alt="">
+        <h1>Friends zone</h1> 
+    </header>
+     
     <div class="cont">
         <div class="div1"><img  id="user" src="user.png" alt="Usuario">Iniciar sesion</div>
         <div class="div1"><img  id="adduser" src="add-user.png" alt="Nuevo usuario">Registrarse</div>
     </div>
 
-    <script>
-        var user=document.querySelector("#user");
-        var adduser=document.querySelector("#adduser");
-        user.addEventListener("click",()=>{
-            location.href="http://localhost/fz-main/login.php"
-        });
-        adduser.addEventListener("click",()=>{
-            location.href="registrarse.html"
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

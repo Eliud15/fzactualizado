@@ -10,7 +10,14 @@
     </title>
 </head>
 <body>
-    <h1>Zona de usuarios </h1>
+
+<header>
+    <img class="icon" src="logofz.png" alt="">
+        <h1>Friends zone </h1>
+</header>
+        
+    
+    
     <div>
         <form action="validar.php" method="post">
             <h2>Ingresar</h2>

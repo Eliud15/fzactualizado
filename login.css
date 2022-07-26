@@ -3,9 +3,25 @@ body{
     padding: 0px;
     background-color: orange;
 }
+
+header{
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
 h1{
     color: black;
-    text-align: center;
+   text-align: center; 
+}
+.icon{
+    float: left;
+    left: 5px;
+    position: absolute;
+     width: 250px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -70px;
+   
 }
 div{
     display: flex;
@@ -14,6 +30,7 @@ div{
     height: 410px;
     justify-content: center;
     margin: 0px auto;
+    
 }
 form{
     flex-direction: column;
@@ -26,6 +43,7 @@ form{
     margin-top: 70px;
     background-color: white;
     box-shadow: 10px 10px 10px black ;
+    border: 2px solid black;
 }
 .inputs{
     margin-top: 20px;
@@ -50,15 +68,18 @@ border: none;
     padding: 8px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(248, 70, 70);
-    color: white;
+    background-color: rgb(224, 140, 14);
+    color: black;
     cursor: pointer;
+    
 }
 #send:hover{
     padding: 8px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(248, 70, 70);
-    color: rgb(165, 158, 158);
+    background-color: rgb(224, 140, 14);
+    color: rgb(56, 56, 56);
+   
     cursor: pointer;
+   
 }
