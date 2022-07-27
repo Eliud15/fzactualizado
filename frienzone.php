@@ -15,8 +15,10 @@ $nombre = $_SESSION["usuario"];
 if (isset($_SESSION["usuario"])) {
   
 
-?>
+?> 
+
     <header>
+   <img class="icon" src="logofz.png" alt="">
         <h1 class="lenguaje">
                 Friends Zone
                 <h6 id="usuario">

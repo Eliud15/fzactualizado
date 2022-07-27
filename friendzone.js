@@ -3,8 +3,13 @@ var Actualizar=document.querySelector("#actualizar");
 var usuario=document.querySelector("#usuario");
 var cancelar=document.querySelector(".cancelar");
 var aceptar=document.querySelector(".aceptar");
+usuario.addEventListener("click",()=>{
+     var salir=document.querySelector(".salir")
+    salir.classList.add('aparecer')
+    salir.style.visibility="visible"
+});
 enviar.addEventListener("click",(e)=>{
-    
+   
     var usuario=document.querySelector("#usuario");
     var nombre=document.querySelector("#nombre");
 
@@ -21,11 +26,12 @@ enviar.addEventListener("click",(e)=>{
         nombre.value=usuario.innerHTML
     }
 });
-usuario.addEventListener("click",(e)=>{
-    var salir=document.querySelector(".salir").style.visibility="visible";
-});
+
 cancelar.addEventListener("click",(e)=>{
-    var salir=document.querySelector(".salir").style.visibility="hidden";
+    var salir=document.querySelector(".salir")
+    salir.classList.remove('aparecer')
+    salir.style.visibility="hidden";
+    
 });
 aceptar.addEventListener("click",(e)=>{
     location.href="salir.php"
