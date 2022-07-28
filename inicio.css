@@ -1,5 +1,5 @@
 body{
-    background:orange;
+    background:#E67E22;
     padding: 0px;
     margin:0px;
 }
@@ -10,8 +10,11 @@ header{
     padding-bottom: 5px;
 }
 h1{
-    color: black;
-   text-align: center; 
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+  cursor: default;
 }
 .icon{
     float: left;
@@ -19,7 +22,7 @@ h1{
     position: absolute;
      width: 230px;
     height: 150px;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: -70px;
    
 }

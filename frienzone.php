@@ -14,13 +14,12 @@ session_start();
 $nombre = $_SESSION["usuario"];
 if (isset($_SESSION["usuario"])) {
   
-
 ?> 
 
     <header>
-   <img class="icon" src="logofz.png" alt="">
+   <img class="icon" src="Orange.png" alt="">
         <h1 class="lenguaje">
-                Friends Zone
+       Orange
                 <h6 id="usuario">
             <?php
             echo $nombre;

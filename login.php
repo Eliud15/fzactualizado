@@ -12,8 +12,8 @@
 <body>
 
 <header>
-    <img class="icon" src="logofz.png" alt="">
-        <h1>Friends zone </h1>
+    <img class="icon" src="Orange.png" alt="">
+        <h1>Orange </h1>
 </header>
         
     
