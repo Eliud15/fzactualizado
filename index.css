@@ -53,7 +53,7 @@ form{
     text-align: center;
     /*border: solid 3px black; */
     padding: 10px;
-    width: 48%;
+    width: 60%;
     border-radius: 1rem;
     margin-top: 50px;
     background-color: white;
@@ -95,4 +95,19 @@ border: none;
     background-color: rgb(224, 140, 14);
     cursor: pointer;
     color: rgb(56, 56, 56);
+}
+@media (max-width:325px) {
+    .icon{
+       
+        width: 230px;
+       height: 110px;
+       margin-top: 10px;
+       margin-left: -80px;
+      
+   }
+    h1{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: -25px;
+    }
 }

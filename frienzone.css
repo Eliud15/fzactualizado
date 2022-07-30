@@ -348,7 +348,25 @@ form{
     }
     
 }
-
+@media (max-width:326px) {
+    h1{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: -25px;
+    }
+    .icon{
+       
+         width: 230px;
+        height: 110px;
+        margin-top: -10px;
+        margin-left: -80px;
+       
+    }
+    h6{
+       
+            transform: translateX(220px);
+    }
+}
 @media (max-width:308px) {
     
     #mensaje{
