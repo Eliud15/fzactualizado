@@ -15,6 +15,6 @@ echo("<center><button class='btn'>Volver</button></center>");
 <script>
 
     
-    location.href="http://localhost/fz-main/frienzone.php"
+    location.href="frienzone.php"
 
 </script>

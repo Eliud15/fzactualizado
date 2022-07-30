@@ -5,29 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frienzone.css">
-    <link rel="shortcut icon" href="fz.png" type="image/x-icon">
-    <title>Friend zone</title>
+    <link rel="shortcut icon" href="Orangef.png" type="image/x-icon">
+    <title>Orange</title>
 </head>
-<body>
+<body id="body">
 <?php
 session_start();
 $nombre = $_SESSION["usuario"];
 if (isset($_SESSION["usuario"])) {
-  
 ?> 
 
-    <header>
+<header>
    <img class="icon" src="Orange.png" alt="">
-        <h1 class="lenguaje">
-       Orange
-                <h6 id="usuario">
-            <?php
-            echo $nombre;
-            ?>
-            </h6>
-            </h1>    
-    </header>
-      <!-- Sin resultado -->
+      <h1 class="lenguaje">
+      Orange
+         <h6 id="usuario">
+    <?php
+    echo $nombre;
+    ?>
+    </h6>
+    </h1>    
+</header>
+      <!-- Cerrar sesion -->
 <div class="salir" >
     <div class="nohayresultado">
         <p class="cerrars">
@@ -43,9 +42,9 @@ if (isset($_SESSION["usuario"])) {
         $res=mysqli_query($conectar,'SELECT mensaje,nombre FROM mensaje');
         while ($mensajes=mysqli_fetch_object($res)) {
         ?> 
-            <h4 >
-                    <?php echo($mensajes->nombre); ?> Dice: <br>
-                <?php echo($mensajes->mensaje); ?> 
+        <h4 >
+        <?php echo($mensajes->nombre); ?> Dice: <br>
+        <?php echo($mensajes->mensaje); ?> 
         </h4>
           <br>
           <br>

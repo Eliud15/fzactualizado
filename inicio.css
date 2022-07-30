@@ -6,33 +6,33 @@ body{
 header{
     
     padding-bottom: 5px;
+		display: flex;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
     -webkit-text-stroke: 2px black;
     color: white;
     font-size: 50px;
     margin-top: 20px;
-  cursor: default;
+    cursor: default;
   transform: translateX(100px);
+  
 }
 .icon{
     float: left;
     left: 5px;
     position: absolute;
-     width: 230px;
+     width: 250px;
     height: 150px;
-    margin-top: -40px;
+    margin-top: -15px;
     margin-left: -70px;
    
 }
 .cont{
-    width: 100%;
     height: 18rem;
-   /* background-color: bisque;*/
     margin-top: 5rem;
     display: flex;
     justify-content: center;
-   /* flex-wrap: wrap;*/
 }
 .div1{
     width: 9rem;

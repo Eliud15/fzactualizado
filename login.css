@@ -6,6 +6,8 @@ body{
 
 header{
     padding-bottom: 5px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
     -webkit-text-stroke: 2px black;
@@ -15,13 +17,22 @@ h1{
   cursor: default;
   transform: translateX(100px);
 }
+.volver{
+    font-size: 15px;
+    color: black;
+   margin-top: 30px;
+   transform: translateX(100px);
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .icon{
     float: left;
     left: 5px;
     position: absolute;
      width: 250px;
     height: 150px;
-    margin-top: -40px;
+    margin-top: -15px;
     margin-left: -70px;
    
 }
@@ -40,7 +51,7 @@ form{
     text-align: center;
     /*border: solid 3px black; */
     padding: 10px;
-    width: 48%;
+    width: 60%;
     border-radius: 1rem;
     margin-top: 70px;
     background-color: white;
@@ -84,4 +95,19 @@ border: none;
    
     cursor: pointer;
    
+}
+@media (max-width:334px) {
+    h1{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: -25px;
+    }
+    .icon{
+       
+         width: 230px;
+        height: 110px;
+        margin-top: 10px;
+        margin-left: -80px;
+       
+    }
 }
