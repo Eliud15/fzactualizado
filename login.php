@@ -22,10 +22,19 @@
     <div>
         <form action="validar.php" method="post">
             <h2>Ingresar</h2>
-            <input type="text" name="usuario" id="user" class="inputs" placeholder="Usuario" autocomplete="off">
-            <input type="password" name="contrasena" id="password" class="inputs" placeholder="Contraseña">
+            <input type="text" name="usuario" id="user" class="inputs" placeholder="Usuario" autocomplete="off" require>
+            
+                <input type="password" name="contrasena" id="password" class="inputs" placeholder="Contraseña"  require>
+             <img class="eyeopen" src="eye-open.png" alt=""> 
+             <img class="eyeclosed" src="eye-closed.png" alt=""> 
+            
+           
             <input type="submit" id="send"  value="Ingresar">
-        </form>
+            <a class="recuperar" href="recuperarcontrasena.php">Recuperar contraseña!!</a>
+        </form> 
+        
     </div>
+   
+    <script src="login.js"></script>
 </body>
 </html>

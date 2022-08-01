@@ -12,25 +12,26 @@
     
     <?php
 
-$contrasena=$_POST["contrasena"];
+$usuario=$_POST["usuario"];
+$telefono=$_POST["telefono"];
 
-if (!empty($contrasena)){
+if (!empty($usuario) && !empty($telefono)){
     $conectar=mysqli_connect("localhost","root","","registros");
-    $resultado=mysqli_query($conectar,"SELECT * FROM  datos WHERE contrasena='$contrasena' ");
+    $resultado=mysqli_query($conectar,"SELECT * FROM  datos WHERE usuario='$usuario' and telefono='$telefono' ");
     if ($resultado->num_rows >0) {
-        echo("<center><h1>Contraseña en uso <br>por favor ingresa  una contraseña nueva</h1> <br> <a href='registrarse.html'>Volver</a> </center>");
+        echo("<center><h1>Usuario y numero en uso <br>por favor ingresa  un nuevo usuario y un nuevo numero </h1> <br> <a href='registrarse.html'>Volver</a> </center>");
        
     }
     else{
         $usuario=$_POST["usuario"];
         $contrasena=$_POST["contrasena"];
-
+        $telefono=$_POST["telefono"];
     $conectar=mysqli_connect("localhost","root","","registros");
 
     $usuario=mysqli_real_escape_string($conectar,$usuario);
     $contrasena=mysqli_real_escape_string($conectar,$contrasena);
-
-    $resultado=mysqli_query($conectar,'INSERT INTO datos(usuario,contrasena) VALUES ("'.$usuario.'","'.$contrasena.'")');
+    $telefono=mysqli_real_escape_string($conectar,$telefono);
+    $resultado=mysqli_query($conectar,'INSERT INTO datos(usuario,contrasena,telefono) VALUES ("'.$usuario.'","'.$contrasena.'","'.$telefono.'")');
 
     echo("<center><h1>Registro exitoso</h1> </center>");
     echo("<center><a href='login.php'>Ingresar</a></center>");

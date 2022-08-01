@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="Orangef.png" type="image/x-icon">
-    <title>Registro</title>
+    <title>Recupera tu contraseña</title>
 </head>
 <body>
     <header>
@@ -15,14 +15,11 @@
     </header>
     
     <div>
-        <form action="registrar.php" method="post">
-            <h2>Registro</h2>
+        <form action="recuperarvalidacion.php" method="post">
+            <h2>Recupera tu contraseña</h2>
             <input type="text" name="usuario" id="user" class="inputs" placeholder="Usuario" autocomplete="off" required>
             <input type="number" name="telefono" id="telefono" class="inputs" placeholder="Telefono" autocomplete="off" required>
-            <input type="password" name="contrasena" id="password" class="inputs" placeholder="Contraseña" required>
-            <input type="submit" id="send"  value="Registrarse">
-
-            <a class="recuperar" href="recuperarcontrasena.php">Recuperar Contraseña!!</a>
+            <input type="submit" id="send"  value="Recuperar">
         </form>
         
     </div>

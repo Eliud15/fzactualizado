@@ -77,6 +77,18 @@ border: none;
    border-bottom: 2px solid black;
    
 }
+.eyeopen{
+    position: relative !important;
+    width: 25px !important;
+    height: 25px !important;
+   transform: translate(770px,-70px);
+}
+.eyeclosed{
+    position: relative !important;
+    width: 25px !important;
+    height: 20px !important;
+    transform: translate(770px,-93px);
+}
 #send{
     padding: 8px;
     border-radius: 5px;
@@ -84,7 +96,7 @@ border: none;
     background-color: #E67E22;
     color: black;
     cursor: pointer;
-    
+    margin-bottom: 20px;
 }
 #send:hover{
     padding: 8px;
@@ -95,6 +107,14 @@ border: none;
    
     cursor: pointer;
    
+}
+.recuperar{
+    text-decoration: none;
+    color: black;
+}
+.recuperar:hover{
+   color: gray;
+    
 }
 @media (max-width:334px) {
     h1{

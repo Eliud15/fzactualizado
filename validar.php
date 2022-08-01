@@ -25,7 +25,7 @@ if (!empty($usuario) && !empty($contrasena) ) {
             header("Location: frienzone.php");
     }
     else{
-        echo("<center><h1>Usuario incorrecto </h1> </center>"); 
+        echo("<center><h1>Usuario incorrecto  <br> o no registrado</h1> </center>"); 
         echo("<center><a href='login.php'>Volver al ingreso</a></center>");
     }
 };

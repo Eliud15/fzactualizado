@@ -1,0 +1,17 @@
+h2{
+   
+        display: inline-block !important;
+        width: auto !important;
+        height: 30px;
+        margin-left: 5px !important;
+        background: white  !important;
+        padding: 10px !important;
+        border-bottom-left-radius: 10px !important; 
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        margin-bottom: 20px !important;
+        word-break: break-word !important;
+        cursor: default;
+        border: 2px solid black;
+    
+}
