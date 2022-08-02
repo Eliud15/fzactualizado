@@ -4,12 +4,13 @@ var usuario=document.querySelector("#usuario");
 var cancelar=document.querySelector(".cancelar");
 var aceptar=document.querySelector(".aceptar");
 var body=document.querySelector("#body");
-document.addEventListener("DOMContentLoaded",scrolldown,false);
+document.addEventListener("DOMContentLoaded",scrolldown);
+
 usuario.addEventListener("click",()=>{
      var salir=document.querySelector(".salir")
     salir.classList.add('aparecer')
     salir.style.visibility="visible"
-    scrolldown()
+    
 });
 enviar.addEventListener("click",(e)=>{
    
@@ -27,7 +28,9 @@ enviar.addEventListener("click",(e)=>{
     }
     else{
         nombre.value=usuario.innerHTML
+        
     }
+    window.scroll(0,900000000000000)
 });
 
 cancelar.addEventListener("click",(e)=>{
@@ -41,11 +44,14 @@ aceptar.addEventListener("click",(e)=>{
 });
 Actualizar.addEventListener("click",(e)=>{
     location.reload("")
+    scrolldown() 
+    window.scroll(0,900000000000000)
 });
 function scrolldown() {
     window.scroll({
         top: 9000000000000,
-        left: 100,
+        left: 0,
         behavior: 'smooth'
-      });
+      })
+      
 }

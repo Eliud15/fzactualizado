@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="Orangef.png" type="image/x-icon">
     <title>Orange</title>
 </head>
-<body id="body">
+
+<body id="body" >
 <?php
 session_start();
 $nombre = $_SESSION["usuario"];
